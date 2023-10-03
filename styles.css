@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.left {
+    width: 100%;
+    height: 400px;
+    background-color: #f3d3bd;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+#input {
+    margin: 0 auto;
+}
+
+    input, label {
+        display: block;
+    }
+
+    input {
+        width: 400px;
+        height: 50px;
+        font-size: 16px;
+        border: none;
+        outline: none; /* removes the outline when clicking on the text input */
+        border-radius: 5px;
+        padding: 0 1rem;
+        color: #333333; 
+    }
+
+    label {
+        text-align: center;
+    }
+
+.submit-button {
+    height: 60px;
+    width: 150px;
+    background-color: #48e5c2;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2rem;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 14px;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.submit-button:focus {
+    outline: none !important;
+}
+
+
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+    .right p, .test-button {
+        margin: 0 auto;
+        align-self: center;
+
+    }
+
+    .right p {
+        color:#b6b6b6;
+        margin-top: 5rem;
+    }
+
+    .todos {
+        padding-top: 2rem;
+    }
+
+        .test-button {
+            /* width: 100%; */
+            position: relative;
+            height: 50px;
+            background-color: #5e5e5e;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fcfaf9;
+            padding: 1rem;
+        }
+
+        .test-button:hover {
+            background-color: #9e9e9e;
+            -webkit-transition: background-color 100ms linear;
+            -ms-transition: background-color 100ms linear;
+            transition: background-color 100ms linear;
+            text-decoration: line-through;
+        }
+
+            .item-buttons {
+                margin: right auto;
+            }
+
+                .fa-regular {
+                    margin-right: 10px;
+                }
+
+                    .fa-trash-can:hover {
+                        color: rgb(255, 103, 103);
+                        -webkit-transition: color 50ms linear;
+                        -ms-transition: color 50ms linear;
+                        transition: color 50ms linear;
+                    }
+
+
+        .completed-task {
+            background-color: #afafaf;
+            text-decoration: line-through;
+        }
+
+
+/*
+@media (min-width: 900px) {
+
+    main {
+        display: flex;
+    }
+
+    .left {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .right {
+        width: 50vw;
+        height: 100vh;
+        float: right;
+    }
+    
+}
+*/
