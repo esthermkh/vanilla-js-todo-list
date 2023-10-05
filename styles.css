@@ -74,8 +74,6 @@ h1 {
     outline: none !important;
 }
 
-
-
 .right {
     width: 100%;
     display: flex;
@@ -125,18 +123,6 @@ h1 {
             .item-buttons {
                 margin: right auto;
             }
-
-                .fa-regular {
-                    margin-right: 10px;
-                }
-
-                    .fa-trash-can:hover {
-                        color: rgb(255, 103, 103);
-                        -webkit-transition: color 50ms linear;
-                        -ms-transition: color 50ms linear;
-                        transition: color 50ms linear;
-                    }
-
 
         .completed-task {
             background-color: #afafaf;
